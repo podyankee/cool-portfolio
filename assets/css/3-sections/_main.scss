@@ -19,6 +19,32 @@ body input:required:valid,
 body textarea:required:valid {
   color: green; }
 
+.loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.loader .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-posirion: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
 .hidden {
   display: none; }
 
@@ -65,3 +91,6 @@ body textarea:required:valid {
 .btn_mnu.active .btn_row:nth-child(2) {
 	opacity: 0;
 }
+
+	
+		
