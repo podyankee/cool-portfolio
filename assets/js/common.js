@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$("body").niceScroll({
+	$("body", "left_aside").niceScroll({
 		horizrailenabled : false
 	});
 	
