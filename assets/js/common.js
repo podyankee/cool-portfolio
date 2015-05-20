@@ -27,15 +27,27 @@ images.find("img").load(function() {
 	wall.fitWidth();
 });
 
-// $(".filter-label").click(function() {
-// 	$(".filter-label").removeClass("active");
-// 	var filter = $(this).addClass("active").data("filter");
-// 	wall.filter(filter);
-// 	setTimeout(function() {
-// 		$(window).resize();
-// 		wall.fitWidth();
-// 	}, 400);
-// });
+ $(".filter_label").click(function() {
+ 	$(".filter_label").removeClass("active");
+ 	var filter = $(this).addClass("active").data("filter");
+ 	wall.filter(filter);
+ 	setTimeout(function() {
+ 		$(window).resize();
+ 		wall.fitWidth();
+ 	}, 400);
+ });
+	
+$(".gallery img").lazyload({
+	effect : "fadeIn"
+}).parent().hover(function() {
+	$(".gallery a").css("opacity", ".8");
+	$(this).css("opacity", "1");
+}, function() {
+	$(".gallery a").css("opacity", "1");
+});	
+	
+	
+	
 	
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
