@@ -38,7 +38,8 @@ images.find("img").load(function() {
  });
 	
 $(".gallery img").lazyload({
-	effect : "fadeIn"
+	effect : "fadeIn",
+	treshold : 1000
 }).parent().hover(function() {
 	$(".gallery a").css("opacity", ".8");
 	$(this).css("opacity", "1");
@@ -79,6 +80,16 @@ $(".gallery img").lazyload({
 		return false;
 	});
 
+	
+	
+	$(".gallery a").magnificPopup({
+	type : 'image',
+	gallery : {
+		enabled : true
+	},
+	removalDelay: 300,
+	mainClass: 'mfp-fade'
+});
 
 	
 });
