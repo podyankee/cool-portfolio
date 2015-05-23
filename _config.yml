@@ -2,6 +2,11 @@
 
 title: Cool Portfolio
 description: Thinker // Designer // YouTuber
+github:
+  repo:  github.com/podyankee/cool-portfolio.io        
+  
+  
+url: http://podyankee.github.io/cool-portfolio
 baseurl: /
 
 # Build settings
