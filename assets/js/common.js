@@ -4,6 +4,8 @@ $(document).ready(function() {
 		horizrailenabled : false
 	});
 	
+$(".gallery").css("min-height", $(document).height()*2);
+	
 $(".btn_mnu").click(function() {
   $(this).toggleClass("active");
   $(".left_side").toggleClass("active");

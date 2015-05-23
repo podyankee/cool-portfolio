@@ -1,13 +1,8 @@
-bg-img: hero-bg.jpg
-logo: logo.svg
-
-avatar: travitar.jpg
-blurb: <p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Obcaecati accusamus veritatis ipsam architecto iure eum. Repellat deserunt nulla, ducimus laborum facilis quas aut ex, earum qui dolores vero sequi, ab!</p>
 
 
-
-title: Artists Theme
+title: Cool Portfolio
 description: Thinker // Designer // YouTuber
+baseurl: /
 
 # Build settings
 
@@ -16,7 +11,7 @@ permalink: pretty
 
 port: 8000
 
-include: ['_includes/work']
+Обо мне: '/about'
 exclude: ['the_design.psd']
 
 sass:
